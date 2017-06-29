@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-29 18:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: multilang/templates/multilang/greeting.html:6
+#: multilang/templates/multilang/index.html:7
+msgid "Hello world!"
+msgstr "Ahoj svet!"
+
+#: multilang/templates/multilang/greeting.html:7
+msgid "Main page"
+msgstr "Hlavná stránka"
+
+#: multilang/templates/multilang/index.html:6
+msgid "Welcome"
+msgstr "Vitaj"
+
+#: multilang/urls.py:12
+msgid "^hello-world/"
+msgstr "^ahoj-svet/"

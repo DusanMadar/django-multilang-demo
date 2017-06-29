@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+  <h1>{% trans 'Hello world!' %}</h1>
+  <a href="{% url 'multilang:index' %}">{% trans 'Main page' %}</a>
+{% endblock %}
