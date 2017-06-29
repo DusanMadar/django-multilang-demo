@@ -1,4 +1,4 @@
-# django-multilang-demo
+# Django-multilang-demo
 
 A Django project/app demonstrating how to create a multi-language website (with localized URLs and a language switcher).
 
