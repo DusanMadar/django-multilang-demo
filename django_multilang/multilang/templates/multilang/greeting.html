@@ -1,8 +1,17 @@
 {% extends 'base.html' %}
 
 {% load i18n %}
+{% load staticfiles %}
 
 {% block content %}
   <h1>{% trans 'Hello world!' %}</h1>
   <a href="{% url 'multilang:index' %}">{% trans 'Main page' %}</a>
+{% endblock %}
+
+{% block scripts %}
+{{ block.super }}
+<!-- JS i18n support -->
+<script type="text/javascript" src="{% url 'javascript-catalog' %}"></script>
+
+<script src="{% static 'js/add-text.js' %}"></script>
 {% endblock %}
