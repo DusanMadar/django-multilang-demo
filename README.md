@@ -1,6 +1,6 @@
 # django-multilang-demo
 
-A Django project/app demonstrating how to create a multi-language website.
+A Django project/app demonstrating how to create a multi-language website (with localized URLs and a language switcher).
 
 Messages are stored in `.po` files (generated with `python manage.py makemessages -l sk` and `python manage.py makemessages -l sk -d djangojs)` and then compiled using `python manage.py compilemessages`.
 
