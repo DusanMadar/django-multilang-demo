@@ -1,0 +1,48 @@
+{% load i18n %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+  <head>
+    <meta charset="utf-8">
+    <title>Django multilang</title>
+  </head>
+
+  <body>
+    <nav>
+      <div id="lang-selector">
+        <form action="{% url 'set_language' %}" method="post">
+          {% csrf_token %}
+          <input name="next" type="hidden" value="{{ redirect_to }}" />
+          <input name="language" type="hidden" />
+        </form>
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% for lang in LANGUAGES %}
+          {% get_language_info for lang.0 as lang_info %}
+
+          {% if lang_info.code == LANGUAGE_CODE %}
+          <strong>{{ lang_info.name_local }}</strong>
+          {% else %}
+          <a href="{% url 'set_language' %}" class="setlang" data-code="{{ lang_info.code }}">{{ lang_info.name_local }}</a>
+          {% endif %}
+
+          {% if not forloop.last %}
+          |
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    {% block scripts %}
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous">
+    </script>
+    <script src="{% static 'js/set-language.js' %}"></script>
+    {% endblock %}
+  </body>
+</html>
