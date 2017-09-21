@@ -9,6 +9,7 @@ Reffer to commit history for a step-by-step guide on adding i18n support to view
 
 Related links
  * [django-translation-demo](https://github.com/radzhome/django-translation-demo)
+ * [Getting started with translating a Django Application](https://blog.braham.biz/getting-started-with-translating-a-django-application-d85ec34e505)
  * [INTERNATIONALIZATION WITH DJANGO, BACKBONE, UNDERSCORE TEMPLATES, AND SASS (LTR AND RTL LANGUAGES)](http://monicalent.com/blog/2014/08/10/internationalization-with-django-backbone-underscore-template-and-sass-ltr-and-rtl-languages/)
  * [Configuring static files](https://docs.djangoproject.com/en/1.11/howto/static-files/#configuring-static-files)
  * [The javascript_catalog view](https://docs.djangoproject.com/en/1.11/topics/i18n/translation/#the-javascript-catalog-view)
